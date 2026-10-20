@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Bread Calculator — React Starter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Initial React scaffold for a planned bread-ingredient calculator.
 
-## Available Scripts
+**Current status:** the checked-in application still renders the Create React App starter screen. Recipe inputs, scaling calculations, and a calculator interface have not been implemented in this snapshot.
 
-In the project directory, you can run:
+## Run locally
 
-### `npm start`
+```bash
+git clone https://github.com/CristianEstrada/bread_calculator.git
+cd bread_calculator
+npm ci
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Existing scripts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `npm start`: start the development server.
+- `npm test`: run the current starter test in watch mode.
+- `CI=true npm test -- --watchAll=false`: run tests once.
+- `npm run build`: create the production bundle in `build/`.
 
-### `npm test`
+The starter uses React and Create React App, as defined in `package.json`. The existing test checks the starter's “Learn React” link; it does not verify recipe calculations.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Intended next steps
 
-### `npm run build`
+1. Define recipe quantities, units, yield, and scaling rules.
+2. Implement the calculator interface and validation.
+3. Add tests covering the actual scaling behavior.
+4. Review the build toolchain before extending the starter.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For the separate recipe API prototype, see [FoodCalc Backend](https://github.com/CristianEstrada/food-calculator_backend). The two repositories are not currently wired together.
